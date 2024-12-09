@@ -6,7 +6,7 @@ import Product2 from "@/Images/Car (2).png";
 import Product3 from "@/Images/Car (3).png";
 import Product4 from "@/Images/Car (4).png";
 import Product5 from "@/Images/Car (5).png";
-import Product6 from "@/Images/car (6).png";
+import Product6 from "@/Images/Car (6).png";
 import Product7 from "@/Images/Car (7).png";
 import Product8 from "@/Images/Car (8).png";
 import Product9 from "@/Images/Car (9).png";
