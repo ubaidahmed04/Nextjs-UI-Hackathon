@@ -1,27 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+.myfont {
+  font-weight: 350; 
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-family: "Plus Jakarta Sans", sans-serif;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.fontbold {
+  font-weight: 700; 
+  font-optical-sizing: auto;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+}
+/* FOR Scroll width  */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.1);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::-webkit-scrollbar-thumb {
+  background: #662249;
 }
