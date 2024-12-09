@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={``}
-      > <section className="myfont flex flex-col min-h-screen max-h-full" >
+      > <section className="myfont flex flex-col w-full min-h-screen max-h-full" >
         < Header />
         <main className="flex-grow max-w-screen-xl w-full flex flex-col mx-auto">
           {children}

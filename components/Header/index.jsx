@@ -55,7 +55,7 @@ export function Header() {
   }, []);
 
   return (
-    <Navbar className=" w-full px-6 py-3">
+    <Navbar className=" min-w-screen max-w-full mx-auto px-6 py-3">
       <div className="flex items-center justify-between text-black">
         <Typography
           as="a"
