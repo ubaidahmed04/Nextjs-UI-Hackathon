@@ -20,6 +20,9 @@ module.exports = withMT({
           //  black:"#0B1B32",
           //  green:"#83A6CE",
       },
+      backgroundImage: {
+        'chevron-pattern': "repeating-linear-gradient(45deg, #3B82F6 0, #3B82F6 20px, #2563EB 20px, #2563EB 40px)"
+      },
     },
   },
   plugins: [],

@@ -9,7 +9,10 @@ import {
 } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { BsFuelPumpDiesel } from "react-icons/bs";
+import { IoCarSport } from "react-icons/io5";
+import { MdPeopleAlt } from "react-icons/md";
+import { IoIosHeartEmpty } from "react-icons/io";
 function StarIcon() {
   return (
     <svg
@@ -31,58 +34,60 @@ export function ProductCard({ url, title, price1, price2,  }) {
   return (
 
     <Card className="min-w-full max-w-[14rem] shadow-lg">
+
       <Link href={'/products'}>
-      <CardHeader floated={false} color="blue-gray " className="group relative">
+    <div className="px-4">
+      <span className="flex items-center justify-between ">
+        <span className="text-black font-bold">Nisssan GT</span>
+        <IoIosHeartEmpty className="text-gray " size={20}/>
+      </span>
+        <p className="text-gray font-semibold"> Sport</p>
+    </div>
+      <CardHeader floated={false} shadow={false} className="group relative">
         <Image
           height={200}
           width={220}
           src={url}
           alt="ui/ux review check"
-          className="h-48 w-full object-contain"
+          className="h-36 w-full object-contain"
         />
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-        {/* Add to Cart button */}
-        {/* <Button
-          size="md"
-          className="absolute bottom-0 left-0 right-0 opacity-0 translate-y-4 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out w-full h-12 bg-secondary text-white"
-          fullWidth={true}
-        >
-          Add to Cart
-        </Button> */}
-        {/* <IconButton
-          size="sm"
-          color="red"
-          variant="text"
-          className="!absolute top-4 right-4 rounded-full"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="h-6 w-6"
-          >
-            <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-          </svg>
-        </IconButton> */}
+        <div className="blur  h-2 relative bottom-8 w-full bg-blue-gray-800 opacity-30"></div>
       </CardHeader>
       </Link>
 
       <CardBody>
-        <div className="mb-3 flex items-center justify-between">
+        <div className=" ">
+          <span className="flex gap-2 justify-between">
+          <span className="flex gap-1 items-center text-gray">
+            <BsFuelPumpDiesel />  <span className="text-sm"> 90L</span>
+          </span>
+          <span className="flex gap-1 items-center text-gray">
+            <IoCarSport />  <span className="text-sm"> Manual</span>
+          </span>
+          <span className="flex gap-1 items-center text-gray">
+            <MdPeopleAlt />  <span className="text-sm"> 2People</span>
+          </span>
+
+          </span>
+        </div>
+        <div className="mb-3 flex  justify-between items-center pt-10 ">
+          <span>
           <Typography variant="h5" color="blue-gray" className="font-medium myfont">
-            {title}
+            ${price1} /<span className="text-gray text-sm"> day</span>
           </Typography>
+          <Typography variant="h5" color="blue-gray" className="text-sm text-gray myfont">
+            ${price2}
+          </Typography>
+          </span>
+          <span>
+          <Button variant="gradient" className="bg-darkBlue text-white">Rent Now</Button>
+          </span>
+          
         </div>
 
-        <Typography
-          color="blue-gray"
-          className="flex items-center gap-1.5 font-medium text-lg"
-        >
-          <span className="text-secondary fontbold myfont">{`Rs.${price1}`}</span>
-          <del className="text-gray-700 mr-2 myfont">{`Rs.${price2}`}</del>
-        </Typography>
+        
 
-        <Typography
+        {/* <Typography
           color="blue-gray"
           className="flex items-center gap-1.5 myfont"
         >
@@ -92,7 +97,7 @@ export function ProductCard({ url, title, price1, price2,  }) {
           <StarIcon />
           <StarIcon />
           (35)
-        </Typography>
+        </Typography> */}
       </CardBody>
     </Card>
   );
