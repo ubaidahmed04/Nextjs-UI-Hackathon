@@ -12,8 +12,10 @@
     "@material-tailwind/react": "^2.1.10",
     "@motionone/utils": "^10.18.0",
     "@ungap/structured-clone": "^1.2.0",
+    "date-fns": "^4.1.0",
     "next": "14.2.20",
     "react": "^18",
+    "react-day-picker": "^9.4.3",
     "react-dom": "^18",
     "react-icons": "^5.4.0",
     "react-slick": "^0.30.2"

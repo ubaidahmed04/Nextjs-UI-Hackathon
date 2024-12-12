@@ -13,26 +13,31 @@ import Product9 from "@/Images/Car (9).png";
 import Product10 from "@/Images/Car (10).png";
 import Product11 from "@/Images/Car (11).png";
 import CarRentalHero from "@/components/Herosection/HeroCard2";
+import PicknDrop from "@/components/PicknDrop";
+import MasonryGridGallery from "@/components/PicknDrop/Image";
 export default function Home() {
   return (
     <>
       <span className="py-4 grid grid-cols-1 md:grid-cols-2 gap-2">
         <HeroSection />
+
         <CarRentalHero />
       </span>
+      {/* <PicknDrop/> */}
+      {/* <MasonryGridGallery/> */}
       <span className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <ProductCard url={Product1} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product2} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product3} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product4} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product5} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product6} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product7} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product8} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product9} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product10} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product11} title='product 1' price1={1200} price2={1500} />
-        <ProductCard url={Product11} title='product 1' price1={1200} price2={1500} />
+        <ProductCard url={Product1} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product2} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product3} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product4} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product5} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product6} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product7} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product8} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product9} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product10} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product11} title='product 1' model={"Sport"} price1={1200} price2={1500} />
+        <ProductCard url={Product11} title='product 1' model={"Sport"} price1={1200} price2={1500} />
       </span>
       <span className="w-full flex justify-center py-4">
         <button className="mt-6 px-6 py-3 bg-darkBlue  hover:bg-blue-800 rounded-lg text-white font-semibold">

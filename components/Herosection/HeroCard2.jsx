@@ -3,7 +3,7 @@ import ADs2 from "@/Images/Car (1).png";
 
 export default function CarRentalHero() {
     return (
-      <div className="relative bg-blue-500 text-white h-full rounded-lg overflow-hidden flex items-center justify-center">
+      <div className="relative bg-blue-500 text-white h-full rounded-lg overflow-hidden  hidden md:flex  items-center justify-center">
         {/* Chevron Pattern */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="bg-chevron-pattern w-full h-full opacity-20"></div>

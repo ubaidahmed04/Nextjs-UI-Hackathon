@@ -30,18 +30,18 @@ function StarIcon() {
   );
 }
 
-export function ProductCard({ url, title, price1, price2,  }) {
+export function ProductCard({ url, title, price1, price2,model  }) {
   return (
 
-    <Card className="min-w-full max-w-[14rem] shadow-lg">
+    <Card className="min-w-full max-w-[16rem] shadow-lg">
 
       <Link href={'/products'}>
-    <div className="px-4">
+    <div className="px-4 pt-3">
       <span className="flex items-center justify-between ">
-        <span className="text-black font-bold">Nisssan GT</span>
-        <IoIosHeartEmpty className="text-gray " size={20}/>
+        <span className="text-black  font-bold">{title}</span>
+        <IoIosHeartEmpty className=" text-gray " size={20}/>
       </span>
-        <p className="text-gray font-semibold"> Sport</p>
+        <p className="text-gray text-sm font-light"> {model}</p>
     </div>
       <CardHeader floated={false} shadow={false} className="group relative">
         <Image
