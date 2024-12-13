@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ADs2 from "@/Images/Car (1).png";
+import ADs2 from "@/Images/car (1).png";
 
 export default function CarRentalHero() {
     return (

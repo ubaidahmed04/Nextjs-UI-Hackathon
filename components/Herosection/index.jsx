@@ -1,5 +1,5 @@
 import React from 'react'
-import ADs2 from "@/Images/Car (1).png";
+import ADs2 from "@/Images/car (1).png";
 import ADs1 from "@/Images/car7.png";
 import Image from 'next/image';
 
